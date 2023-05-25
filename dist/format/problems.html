@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>常见问题 | 前端开发</title>
+    <meta name="generator" content="VuePress 1.9.9">
+    <link rel="icon" href="/favicon.ico">
+    <meta name="description" content="前端开发积累，前端开发规范，代码管理。">
+    
+    <link rel="preload" href="/assets/css/0.styles.e8e4f3a3.css" as="style"><link rel="preload" href="/assets/js/app.ca5deaac.js" as="script"><link rel="preload" href="/assets/js/2.9e4e18af.js" as="script"><link rel="preload" href="/assets/js/13.fd1a98c0.js" as="script"><link rel="prefetch" href="/assets/js/10.f5569666.js"><link rel="prefetch" href="/assets/js/11.ab8e5359.js"><link rel="prefetch" href="/assets/js/12.28e96004.js"><link rel="prefetch" href="/assets/js/14.d9e1bc0f.js"><link rel="prefetch" href="/assets/js/15.16e2a3fe.js"><link rel="prefetch" href="/assets/js/16.1f8a7070.js"><link rel="prefetch" href="/assets/js/17.09a892ad.js"><link rel="prefetch" href="/assets/js/18.de66a360.js"><link rel="prefetch" href="/assets/js/19.5363e703.js"><link rel="prefetch" href="/assets/js/20.0071fe50.js"><link rel="prefetch" href="/assets/js/21.0263a288.js"><link rel="prefetch" href="/assets/js/22.ed608079.js"><link rel="prefetch" href="/assets/js/23.b5c415d1.js"><link rel="prefetch" href="/assets/js/24.27785dea.js"><link rel="prefetch" href="/assets/js/25.3b288a57.js"><link rel="prefetch" href="/assets/js/3.ac6bb611.js"><link rel="prefetch" href="/assets/js/4.30555531.js"><link rel="prefetch" href="/assets/js/5.c654558c.js"><link rel="prefetch" href="/assets/js/6.1d8fa8a6.js"><link rel="prefetch" href="/assets/js/7.bb161e72.js"><link rel="prefetch" href="/assets/js/8.ee4c0a8b.js"><link rel="prefetch" href="/assets/js/9.b9cc676d.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.e8e4f3a3.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/logo.png" alt="前端开发" class="logo"> <span class="site-name can-hide">前端开发</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/standard/" class="nav-link">
+  指南
+</a></div><div class="nav-item"><a href="/code/" class="nav-link">
+  代码管理
+</a></div><div class="nav-item"><a href="/format/" class="nav-link router-link-active">
+  统一格式
+</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/standard/" class="nav-link">
+  指南
+</a></div><div class="nav-item"><a href="/code/" class="nav-link">
+  代码管理
+</a></div><div class="nav-item"><a href="/format/" class="nav-link router-link-active">
+  统一格式
+</a></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/format/" aria-current="page" class="sidebar-link">介绍</a></li><li><a href="/format/prettier.html" class="sidebar-link">prettier配置</a></li><li><a href="/format/eslint.html" class="sidebar-link">eslint配置</a></li><li><a href="/format/problems.html" aria-current="page" class="active sidebar-link">常见问题</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/format/problems.html#解决prettier、eslint冲突问题" class="sidebar-link">解决prettier、eslint冲突问题</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/format/problems.html#_1-呈现冲突" class="sidebar-link">1.呈现冲突</a></li><li class="sidebar-sub-header"><a href="/format/problems.html#_2-解决冲突" class="sidebar-link">2.解决冲突</a></li></ul></li><li class="sidebar-sub-header"><a href="/format/problems.html#支持vue3-0中多根节点-fragements" class="sidebar-link">支持vue3.0中多根节点（fragements）</a></li><li class="sidebar-sub-header"><a href="/format/problems.html#知识拓展" class="sidebar-link">知识拓展</a></li></ul></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="常见问题"><a href="#常见问题" class="header-anchor">#</a> 常见问题</h1> <h2 id="解决prettier、eslint冲突问题"><a href="#解决prettier、eslint冲突问题" class="header-anchor">#</a> 解决prettier、eslint冲突问题</h2> <p>在项目中，我们都是<code>eslint</code>、<code>prettier</code>组合使用，难免会有冲突。下面我们分俩个方面： <strong>呈现冲突</strong>、<strong>解决冲突</strong>。</p> <h3 id="_1-呈现冲突"><a href="#_1-呈现冲突" class="header-anchor">#</a> 1.呈现冲突</h3> <ul><li>prettier的配置如下：</li></ul> <div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token comment">//.prettierrc.json文件中</span>
+<span class="token punctuation">{</span> 
+  <span class="token string-property property">&quot;tabWidth&quot;</span><span class="token operator">:</span><span class="token number">2</span> <span class="token punctuation">,</span>
+  <span class="token string-property property">&quot;singleQuote&quot;</span><span class="token operator">:</span><span class="token boolean">true</span> <span class="token comment">//开启单引号</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><ul><li>eslint的配置如下：（只需关注<font color="red">rules</font>里面配置的规则）</li></ul> <div class="language-js line-numbers-mode"><pre class="language-js"><code>module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
+	<span class="token literal-property property">env</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+		<span class="token literal-property property">browser</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+		<span class="token literal-property property">es2021</span><span class="token operator">:</span> <span class="token boolean">true</span>
+	<span class="token punctuation">}</span><span class="token punctuation">,</span>
+	<span class="token keyword">extends</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+		<span class="token string">&quot;plugin:vue/vue3-essential&quot;</span><span class="token punctuation">,</span>
+		<span class="token string">&quot;standard-with-typescript&quot;</span>
+		<span class="token comment">// &quot;plugin:prettier/recommended&quot; // 添加 prettier 插件</span>
+	<span class="token punctuation">]</span><span class="token punctuation">,</span>
+	<span class="token literal-property property">overrides</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+	<span class="token literal-property property">parserOptions</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+		<span class="token literal-property property">ecmaVersion</span><span class="token operator">:</span> <span class="token string">&quot;latest&quot;</span><span class="token punctuation">,</span>
+		<span class="token literal-property property">parser</span><span class="token operator">:</span> <span class="token string">&quot;@typescript-eslint/parser&quot;</span><span class="token punctuation">,</span>
+		<span class="token literal-property property">sourceType</span><span class="token operator">:</span> <span class="token string">&quot;module&quot;</span>
+	<span class="token punctuation">}</span><span class="token punctuation">,</span>
+	<span class="token literal-property property">plugins</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">&quot;vue&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;@typescript-eslint&quot;</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+	<span class="token literal-property property">rules</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+		<span class="token comment">// &quot;vue/no-multiple-template-root&quot;: &quot;off&quot; // 关闭多根节点的校验</span>
+	<span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br></div></div><p>如图所示：
+<img src="/format/problems-1.png" alt="问题呈现1"></p> <p>此时当我们<font color="red"><code>ctrl+s</code></font>时，<font color="red"><code>prettier</code></font>会将所有的引号转成单引号，而我们<font color="red"><code>eslint</code></font>引号规则为：双引号，否则一律按照<font color="red"><code>error</code></font>处理，这就形成了冲突。</p> <h3 id="_2-解决冲突"><a href="#_2-解决冲突" class="header-anchor">#</a> 2.解决冲突</h3> <ul><li>安装插件</li></ul> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token function">npm</span> i eslint-plugin-prettier eslint-config-prettier <span class="token parameter variable">-D</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><ul><li>在<font color="red"><code>.eslintrc.js</code></font>文件中配置插件，保存即可</li></ul> <div class="language-js line-numbers-mode"><pre class="language-js"><code>module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
+	<span class="token literal-property property">env</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+		<span class="token literal-property property">browser</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+		<span class="token literal-property property">es2021</span><span class="token operator">:</span> <span class="token boolean">true</span>
+	<span class="token punctuation">}</span><span class="token punctuation">,</span>
+	<span class="token keyword">extends</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+		<span class="token string">&quot;plugin:vue/vue3-essential&quot;</span><span class="token punctuation">,</span>
+		<span class="token string">&quot;standard-with-typescript&quot;</span><span class="token punctuation">,</span>
+		<span class="token string">&quot;plugin:prettier/recommended&quot;</span> <span class="token comment">// 添加 prettier 插件</span>
+	<span class="token punctuation">]</span><span class="token punctuation">,</span>
+	<span class="token literal-property property">overrides</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+	<span class="token literal-property property">parserOptions</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+		<span class="token literal-property property">ecmaVersion</span><span class="token operator">:</span> <span class="token string">&quot;latest&quot;</span><span class="token punctuation">,</span>
+		<span class="token literal-property property">parser</span><span class="token operator">:</span> <span class="token string">&quot;@typescript-eslint/parser&quot;</span><span class="token punctuation">,</span>
+		<span class="token literal-property property">sourceType</span><span class="token operator">:</span> <span class="token string">&quot;module&quot;</span>
+	<span class="token punctuation">}</span><span class="token punctuation">,</span>
+	<span class="token literal-property property">plugins</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">&quot;vue&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;@typescript-eslint&quot;</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+	<span class="token literal-property property">rules</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+		<span class="token comment">// &quot;vue/no-multiple-template-root&quot;: &quot;off&quot; // 关闭多根节点的校验</span>
+	<span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br></div></div><ul><li>完美解决冲突</li></ul> <p>如图所示：</p> <p><img src="/format/problems-2.png" alt="问题呈现2"></p> <h2 id="支持vue3-0中多根节点-fragements"><a href="#支持vue3-0中多根节点-fragements" class="header-anchor">#</a> 支持vue3.0中多根节点（fragements）</h2> <p>在Eslint、Prettier配置完毕后，如果配置的扩展插件不是vue3版本的，即不是<code>plugin:vue/vue3-essential</code>，那么就会报错。</p> <div class="language-js line-numbers-mode"><pre class="language-js"><code>module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
+	<span class="token operator">...</span><span class="token punctuation">,</span>
+	<span class="token keyword">extends</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+		<span class="token string">&quot;plugin:vue/vue3-essential&quot;</span><span class="token punctuation">,</span> <span class="token comment">// 兼容vue3，多根节点不会报错；</span>
+	<span class="token punctuation">]</span><span class="token punctuation">,</span>
+  <span class="token operator">...</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><ul><li><p>错误原因：<code>The template root requires exactly one element. // 模板只需要一个根元素</code></p></li> <li><p>解决办法： 在.eslintrc.js文件中，配置rules成功解决。</p></li></ul> <div class="language-js line-numbers-mode"><pre class="language-js"><code>module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
+  <span class="token literal-property property">env</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token literal-property property">browser</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">es2021</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token operator">...</span><span class="token punctuation">,</span>
+  <span class="token literal-property property">rules</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token string-property property">'vue/no-multiple-template-root'</span><span class="token operator">:</span> <span class="token string">'off'</span><span class="token punctuation">,</span><span class="token comment">// 关闭多根节点的校验</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br></div></div><h2 id="知识拓展"><a href="#知识拓展" class="header-anchor">#</a> 知识拓展</h2> <p>有时候，我们项目中配置了<code>eslint</code>，报错了，但是你又不熟悉如何去配置某个规则。</p> <p>比如<code>console.log</code>这样的代码不应该为<code>error</code>,或许应该为<code>warn</code>更适合。下面我们来看个例子：</p> <ul><li>根据提示打开官网</li></ul> <p><img src="/format/problems-3.png" alt="问题呈现3"></p> <ul><li>查看官网的配置</li></ul> <p><img src="/format/problems-4.png" alt="问题呈现4"></p> <ul><li>在文件中配置</li></ul> <p><img src="/format/problems-5.png" alt="问题呈现5"></p></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/format/eslint.html" class="prev">
+        eslint配置
+      </a></span> <!----></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.ca5deaac.js" defer></script><script src="/assets/js/2.9e4e18af.js" defer></script><script src="/assets/js/13.fd1a98c0.js" defer></script>
+  </body>
+</html>

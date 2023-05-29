@@ -4,12 +4,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>烟花秀</title>
+    <link rel="stylesheet" href="./css/animate.min.css" />
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <div class="play">
-      <button id="palyBtn" class="shadow__btn">点击开始</button>
+    <div class="btn-wrap">
+      <button class="btn" type="button" id="palyBtn">
+        <strong>点击开始</strong>
+        <div id="container-stars">
+          <div id="stars"></div>
+        </div>
+      
+        <div id="glow">
+          <div class="circle"></div>
+          <div class="circle"></div>
+        </div>
+      </button>
     </div>
+    <div class="number animate__fadeOut"></div>
     <canvas id="canvas" width="1920" height="942"></canvas>
     <div class="block-audio">
       <audio class="exp" src="./resource/exp1.mp3" controls=""></audio>

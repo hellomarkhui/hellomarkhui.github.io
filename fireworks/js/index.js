@@ -894,12 +894,47 @@ $(function () {
     }
     update();
     draw();
+    if(!isPlaying) {
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+    }
+  }
+
+  // 倒计时
+  function countDown() {
+    const $number = $('.number');
+    $number.show();
+    let count = 0;
+    $number.text(3-count);
+    $number.addClass('zoomIn animated infinite');
+    setTimeout(() => {
+      $number.removeClass('zoomIn animated infinite');
+    }, 4040);
+    const timer1 = setInterval(() => {
+      count++;
+      if(count < 3) {
+        $number.text(3-count);
+      } else if(count == 3) {
+        $number.text('开始');
+      } else {
+        $number.hide();
+        clearInterval(timer1);
+      }
+    }, 1010);
   }
 
   // 点击事件
   $('#palyBtn').click(function() {
-    $(this).text(isPlaying? '点击继续' : '点击暂停');
-    isPlaying = !isPlaying;
-    loop();
+    $('.btn-wrap').addClass('side');
+    $(this).find('strong').text(isPlaying? '点击继续' : '点击暂停');
+    
+    if(!isPlaying) {
+      countDown();
+      setTimeout(() => {
+        isPlaying = !isPlaying;
+        loop();
+      }, 4 * 1000);
+    } else {
+      isPlaying = !isPlaying;
+    }
   })
 });
